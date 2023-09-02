@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello Page</title>
+</head>
+<body>
+    <h1 th:text="${welcomeMessage}"></h1>
+    <ul>
+        <li th:each="oppilas : ${students}">
+            <p th:text="${oppilas.firstName + ' ' + oppilas.lastName}"></p>
+        </li>
+    </ul>
+</body>
+</html>
